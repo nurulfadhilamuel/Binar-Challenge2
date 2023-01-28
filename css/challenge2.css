@@ -1,0 +1,962 @@
+body {
+    font-family: Helvetica;
+    font-style: normal;  
+    width: 100%;
+}
+
+
+/*navbar*/
+.navbar.navbar{
+    background-color: #F1F3FF;
+}
+
+
+.navbar-brand{
+    /* logo */
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 136px;
+    top: 25px;
+
+    /* Primary/DarkBlue/04 */
+    background: #0D28A6;
+}
+
+
+.navbar-nav{
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 24px;
+}
+
+
+.nav-link{
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+}
+
+
+.nav-link.register{
+    /* Button */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 81px;
+    height: 36px;
+    margin-top: 10px;
+
+    /* Primary/LimeGreen/04 */
+    background: #5CB85F;
+    color: #FFFFFF;
+    border-radius: 2px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+}
+/*end navbar*/
+
+
+/*hero section*/
+.hero.section{
+    background-color: #F1F3FF;
+    height: 435px;
+    text-align: justify;
+    top: 117px;
+    padding: 18px;
+}
+
+
+.hero.section h1{
+    /* Sewa & Rental Mobil Terbaik di kawasan Banda Aceh */
+    position: absolute;
+    width: 568px;
+    height: 108px;
+    left: 136px;
+    top: 177px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    /* or 54px */
+    color: #000000;
+}
+
+
+.hero.section p{
+    position: absolute;
+    width: 468px;
+    height: 60px;
+    left: 136px;
+    top: 301px;
+
+    /* Body/14/Light */
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #000000;
+}
+
+
+.hero.section a{
+    /* Text Here */
+    width: 116px;
+    height: 20px;
+
+    /* Body/14/Bold */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Neutral/10 */
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+
+    /* Button */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    left: 136px;
+    top: 377px;
+
+    /* Primary/LimeGreen/04 */
+    background: #5CB85F;
+    border-radius: 2px;
+}
+
+
+.mercedes{
+    /* img_car */
+    position: absolute;
+    width: 630px;
+    height: 407px;
+    left: 719px;
+    top: 110px;
+}
+/* end hero section*/
+
+/*responsive navbar dan hero section*/
+@media(max-width:768px){
+    .navbar.navbar{
+        width: 360px;
+    }
+    .hero.section{
+        width: 360px;
+        height: 657px;
+    }
+    .navbar-toggler{
+        position: relative;
+        left: 250px;
+        top: 15px;
+    }
+    .navbar-nav{
+        position: absolute;
+        background: #FFFFFF;
+        height: 1000vh;
+        width: 180px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .navbar-brand{
+        position: absolute;
+        width: 100px;
+        height: 34px;
+        left: 16px;
+        top: 24px;
+    }
+    .hero.section h1{
+        width: 266px;
+        height: 216px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        left: 16px;
+        word-spacing: -3px;
+        margin-top: -90px;
+    }   
+    .hero.section p{
+        width: 320px;
+        height: 60px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        left: 16px;
+        padding-top: 20px;
+    }
+    .hero.section a{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 10px;
+        position: absolute;
+        width: 140px;
+        height: 36px;
+        left: 16px;
+        top: 398px;
+        margin-top: 30px;
+    }
+    .mercedes{
+        position: absolute;
+        width: 344.22px;
+        height: 199px;
+        left: 360.22px;
+        top: 508px;
+        left: 16px;
+    }
+}
+/*end responsive navbar dan hero section*/
+
+/*Our Services*/
+.our.services{
+    position: absolute;
+    width: 1027px;
+    height: 428px;
+    left: 206px;
+    top: 604px;
+}
+
+
+.happygirl{
+    width: 459px;
+    left: 206px;
+}
+
+
+.best{
+    margin-left: 50px;
+    padding-top: 35px;
+}
+
+
+.our.services h2{
+    width: 468px;
+    height: 72px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+.our.services p{
+    width: 468px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    color: #000000;
+}
+
+
+.check{
+    /* Auto layout */
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    height: 184px;
+}
+/* end Our Services*/
+
+/*responsive our services*/
+@media(max-width:768px){
+    .our.services{
+        left: 16px;
+        margin-top: 140px;
+        
+    }
+    .happygirl{
+        width: 252px;
+        height: 228px;
+        margin: 37px;
+        top: 717px;
+    }
+    .best{
+        margin: -315px;
+        margin-top: 300px;
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 328px;
+        height: 388px;
+        left: 16px;
+        top: 969px;
+    }
+    .our.services h2{
+        width: 328px;
+    }
+    .our.services p{
+        width: 328px;
+        font-weight: 100;
+        font-size: small
+    }
+}
+/*responsive our services*/
+
+/*why us*/
+.why.us h2{
+    position: absolute;
+    height: 36px;
+    left: 9.44%;
+    right: 58.06%;
+    top: 1132px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+.mengapa{
+    position: absolute;
+    width: 468px;
+    height: 20px;
+    left: 128px;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 700px;
+}
+
+
+.list{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    position: absolute;
+    width: 1168px;
+    height: 196px;
+    left: 110px;
+    top: 1244px;
+}
+
+
+
+.lengkap{
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 268px;
+    height: 196px;
+}
+
+
+.lengkap h3{
+    width: 113px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+}
+
+
+.lengkap p{
+    width: 220px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+
+.murah{
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 268px;
+    height: 196px;
+}
+
+
+.murah h3{
+    width: 98px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+}
+
+
+.murah p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    width: 220px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+
+.layanan{
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 268px;
+    height: 196px;
+}
+
+
+.layanan h3{
+    width: 124px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+}
+
+
+.layanan p{
+    width: 220px;
+    height: 60px;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.profesional{
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 268px;
+    height: 196px;
+}
+
+
+.profesional h3{   
+    width: 133px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px
+}
+
+
+.profesional p{
+    width: 220px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+/*end why us*/
+
+/*responsive why us*/
+@media(max-width:768px){
+    .why.us h2{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+        height: 36px;
+        top: 1470px;
+        margin-left: 90px;
+        width: 328px;
+    }  
+    .mengapa{
+        margin-top: 110px;
+        left: 55px;
+        position: relative;
+    }
+    .lengkap{
+        margin: -75px;
+        margin-top: 290px;
+        
+    }
+    .murah{
+        margin: -225px;
+        margin-top: 470px;  
+    } 
+    .layanan{
+        margin: -75px;
+        margin-top: 650px;
+    }
+    .profesional{
+        margin: -225px;
+        margin-top: 830px;
+    }
+}
+/*end responsive why us*/
+
+/* Testimonial */
+.testi h3{
+    position: absolute;
+    height: 36px;
+    left: 32.36%;
+    right: 35.14%;
+    top: 1540px;
+
+    /* Heading/24/Bold */
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    /* identical to box height, or 150% */
+    text-align: center;
+    color: #000000;
+}
+
+
+.testi p{
+    position: absolute;
+    width: 468px;
+    height: 20px;
+    left: 423px;
+    top: 1592px;
+
+    /* Body/14/Light */
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    height: 80px;
+}
+
+
+.owl-carousel{
+    position: absolute;
+    width: 1529px;
+    height: 270px;
+    left: -180px;
+    top: 1652px;
+}
+
+
+.item1{
+    background: #F1F3FF;
+    /* Shadow/Low */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    height: 270px;
+    width: 500px;
+    left: 1061px;
+    top: 1652px;
+    border-radius: 8px;
+
+}
+
+.item2{
+    background: #F1F3FF;
+    /* Shadow/Low */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    height: 270px;
+    width: 500px;
+    left: 1061px;
+    top: 1652px;
+    border-radius: 8px;
+}
+
+.rate{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 80px;
+    height: 16px;
+    flex: none;
+    margin-top: 65px;
+    margin-left: -105px;
+}
+
+.lorem{
+    width: 392px;
+    height: 80px;
+    /* Body/14/Light */
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+
+.johne{
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.john{
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.name{
+    width: 415px;
+    height: 20px;
+    /* Body/14/Regular */
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+/*end testimonial*/
+
+/*responsive testimonial*/
+@media(max-width:768px){
+    .testi h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+        position: absolute;
+        height: 36px;
+        top: 2345px;
+        margin-left: -110px;
+        width: 328px;
+    }   
+    .testi p{
+            margin-top: -730px;
+            left: 10px;
+            position: relative;
+            width: 328px;
+        }
+    
+    .owl-carousel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 32px;
+        gap: 24px;
+        position: absolute;
+        width: 328px;
+        height: 372px;
+        left: 16px;
+        top: 2413px;
+    }
+
+    .johne{
+        margin: 100px;
+        margin-top: 10px;
+    }
+    
+    .john{
+        margin: 100px;
+        margin-top: 10px;
+    }
+    .rate{
+        margin-top: 80px;
+        margin-left: -120px;
+    }
+    .lorem{
+        margin-left: -70px;
+        width: 238px;
+        height: 100px;
+    }
+    .name{
+        margin-left: -71px;
+        margin-top: 42px;
+    }
+}    
+/*end responsive testimonial*/
+
+/*banner*/
+.banner{
+    position: absolute;
+    width: 1168px;
+    height: 326px;
+    left: 136px;
+    top: 2078px;
+    background: #0D28A6;
+    border-radius: 13px;
+    margin-left: -33px;
+
+}
+
+
+.sewa h1{
+font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+color: #FFFFFF;
+padding-top: 70px;
+}
+
+.sewa p{
+    width: 468px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 5px;
+    color: #FFFFFF;
+    margin-left: 350px;
+}
+
+
+.sewa a{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 140px;
+    height: 36px;
+    left: 650px;
+    top: 2304px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Primary/LimeGreen/04 */
+    background: #5CB85F;
+    border-radius: 2px;
+    margin-left: 510px;
+    margin-top: 40px;
+}
+/*end banner*/
+
+/*responsive banner*/
+@media(max-width:768px){
+    .banner{
+        position: absolute;
+        width: 328px;
+        height: 400px;
+        top: 2800px;
+        left: 45px;
+    }
+    .sewa h1{
+        width: 212px;
+        height: 108px;
+        /* Heading/24/Bold */
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        /* or 150% */
+        text-align: center;
+        margin-left: 60px;
+        margin-top: -18px;
+    }
+    .sewa p{
+        width: 212px;
+        height: 80px;
+        /* Body/14/Light */
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        text-align: center;
+        margin-left: 60px;
+        margin-top: 85px;
+    }
+    .sewa a{
+        margin-left: 100px;
+    }
+}
+/*end responsive banner*/
+
+/*FAQ*/
+.faq{
+    position: absolute;
+    width: 1168px;
+    height: 344px;
+    left: 136px;
+    top: 2504px;
+}
+
+
+.frequently h2{
+    height: 36px;
+    left: 9.44%;
+    right: 65%;
+    top: 2508px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 668px;
+    height: 344px;
+    left: 636px;
+    top: 2504px;
+    margin-left: 480px;
+    margin-top: -80px
+}
+/*end FAQ*/
+
+/*responsive FAQ*/
+@media(max-width:768px){
+    .faq{
+        position: absolute;
+        height: 36px;
+        left: 4.44%;
+        right: 4.44%;
+        top: 3300px;
+    }
+    .frequently p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+    .accordion{
+        margin-top: 10px;
+        margin-left: 13px;
+        width: 328px;
+    }
+}
+/*end responsive FAQ*/
+
+
+/*footer*/
+footer{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 86px;
+    position: absolute;
+    width: 1141px;
+    height: 128px;
+    left: 136px;
+    top: 2998px;
+    padding-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.footer-col{
+    width: 268px;
+    padding: 15px;
+
+}
+
+
+.alamat{
+    width: 268px;
+    height: 112px;
+}
+
+
+.navigasi{
+    width: 268px;
+    height: 128px;
+    height: 128px;
+    left: 354px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0px;
+    margin-left: 60px;
+}
+
+.connect{
+    width: 224px;
+    height: 32px;
+    top: 36px;
+    margin-left: -100px;
+}
+
+.copyright{
+    margin-left: 90px;
+}
+/*end footer*/
+
+/*responsive footer*/
+@media(max-width:768px){
+    .alamat{
+        position: relative;
+        width: 268px;
+        height: 40px;
+        margin-left: -100px;
+        top: 800px;
+    }
+    .navigasi{
+        position: relative;
+        width: 268px;
+        top: 930px;
+        margin-left: -622px;
+    }
+    .connect{
+        position: relative;
+        width: 268px;
+        margin-left: 85px;
+        top: 1065px;
+    }
+    .copyright{
+        margin-top: 1150px;
+        margin-left: -270px;
+    }
+}
+/*end responsive footer*/
